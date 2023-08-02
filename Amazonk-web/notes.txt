@@ -1,0 +1,22 @@
+===========================================================================================
+step 1 	: npm init -y
+step 2 	: .gitignore
+step 3	: npm i pg express ejs pg sequelize && npm i -D sequelize-cli
+step 4	: npx sequelize init
+step 5	: npx sequelize db:create
+step 6	: npx sequelize model:create --name User --attributes name:string,genre:string,email:string,password:string,role:string
+          npx sequelize model:create --name Category --attributes category:string
+          npx sequelize model:create --name Wallet --attributes UserId:integer,saldo:integer
+          npx sequelize model:create --name Product --attributes name:string,price:integer,imgUrl:string,stock:integer,CategoryId:integer
+          npx sequelize model:create --name Transaction --attributes TransactionId:integer,ProductId:integer
+          npx sequelize migration:create --name addColumnStatus
+step 7	: npx sequelize db:migrate
+step 8	: npx sequelize db:seed --seed 20230602035014-user
+          npx sequelize db:seed --seed 20230602035044-category
+          npx sequelize db:seed --seed 20230602035100-wallet
+          npx sequelize db:seed --seed 20230602035109-product
+          npx sequelize db:seed --seed 20230602035123-transaction
+step 9	: 
+
+Yang kurang
+- Easyinvoice (Pack Luar)
