@@ -1,0 +1,245 @@
+SERVER
+========================================================================
+-- Setup 
+npm i pg express sequelize bcryptjs jsonwebtoken dotenv cors && npm i -D sequelize-cli
+touch app.js .gitignore .env .envTemplate
+mkdir controllers helpers middlewares
+
+npx sequelize init
+npx sequelize db:create
+npx sequelize model:create --name Player --attributes email:string,password:string
+npx sequelize model:create --name Card --attributes name:string,imageUrl:string,price:integer
+npx sequelize model:create --name Order --attributes PlayerId:integer,CardId:integer
+npx sequelize model:create --name History --attributes description:text,updatedBy:string
+npx sequelize db:migrate
+npx sequelize db:migrate:undo:all
+npx sequelize seed:create --name players
+npx sequelize seed:create --name cards
+npx sequelize db:seed:all
+Atur assosiation setiap model dan semua validate
+Note Setelah seeders berhasil
+* Buat helpers bcrypt dan jwt langsung aja sama errorHandler
+
+-- App, Controller
+App.js {
+    Salin helloword di express
+    Setting all middleware
+    - cors => letak paling atas
+    express url & express json
+    - authentication => letak ditengah sebelum main routing
+    buatlah routing samain dengan controllers sesuai dengan api_doc
+    - error handle(middlewares) => letak diakhir
+    untuk SequelizeValidationError cukup err di errors index 0 messagenya
+    untuk JsonWebTokenError di 401 sama kayak UnAuthorized/ invalid token
+    untuk errorHandle diatas jangan lupa console.log err
+}
+
+Controller.js {
+    Jangan lupa async(setelah static) dan await sebelum sequelize
+    GET All item{
+        sequelize findAll lalu status 200
+    }
+    POST item{
+        req.body
+        sequelize create lalu status 201
+    }
+    PUT item{
+        req.params dan req.body
+        sequelize findByPk dulu & validate 404
+        sequelize update lalu 200
+    } 
+    DELETE item{
+        req.params dan req.body
+        sequelize findByPk dulu & validate 404
+        sequelize delete lalu 200
+    } 
+    register{
+        req.body
+        sequelize findOne dulu & validate 401 email harus beda
+        sequelize create lalu status 201
+    }
+    login{
+        req.body
+        validate req.body 400
+        sequelize findOne dulu & validate 401 email harus beda
+        check password dengan compareSync dari bcrypt validate 401
+        status 200 dengan access token dari signtoken object id sama dengan findOne id
+    }
+}
+
+bcryptjs{
+    rq bcryptjs dari website
+    buat function bisa hashpassword dengan params input dan compareSync dengan params input dan hash
+    - hash di hook/seed
+    - compare di controller
+}
+
+jwttoken{
+    rq jwt dari website
+    const variable bebas dengan value dari .env
+    buat function bisa signtoken dengan params payload dan verifytoken dengan params token
+    - signtoken di controller login
+    - verify di authentication
+}
+
+authentication{
+    buat function async sama kayak controller
+    terima req.headers access token lalu validate 401 invalidtoken
+    verify access token dari headers
+    sequelize findOne dengan id dari decoded id lalu validate 401 invalid token
+    req.user didapat dari findOne
+    lalu next invoke kosong
+    letak ditengah routing
+}
+authorization {
+    buat function async sama kayak controller
+    terima req.params id dan req.user role/bebas 
+    sequelize findByPk dengan id dari params  lalu validate 404 NotFound
+    buat kondisi authorization validate 403 forbidden
+    lalu next invoke kosong
+    letak ditengah routing
+}
+.env{
+    rq.env letak di app paling atas
+    value di jwt dengan process.env.(value)
+    jangan lupa buat .env template dengan nama .env nya aja
+}
+
+
+CLIENT
+===============================================================================
+-- Setup
+npm init vue@latest
+cd client
+npm install axios
+npm run dev
+
+Atur index.html(client)
+copy cdn axios https://axios-http.com/docs/intro
+copy cdn vue https://vuejs.org/guide/quick-start.html#creating-a-vue-application
+
+Buat Compenent di src/component
+- sesuaikan dengan soal/template yang dikasih
+- buat scrypt dan template disetiap file
+- paste setiap template ke component di template
+- import di App.vue serta tambahkan component di exports default
+- lalu ditemplate panggil semua
+- atur pagenya bisa buat method navigate dengan params page/bebas
+
+Axios { https://axios-http.com/docs/api_intro
+    Mengunakan Async setiap method untuk params disesuaikan dari emits dan jangan lupa trycatch 
+    Register {
+        menerima params data
+        axios post
+        lalu url menerima data input
+        header menerima access token didapatkan dari localstorage dapat access token
+
+        navigate ke login
+    }
+    Login {
+        - function
+        menerima params data
+        axios jangan lupa di await
+        {
+        method post 
+        lalu url
+        data dari params
+        }
+            
+        localstorage di set dengan access_token dari data.access_token
+
+        navigate ke dashboard
+
+        - form
+        tampung data dari form mengunakan v-model lalu di @submit di prevent lalu menjalan method yang membawa emit dan data
+    }
+    logout {
+        localstorage di delete dengan method clear pindah ke login
+    }
+    fetchData{
+        buat variable di data bentuk array
+        tidak terima params
+        di definisi dengan data/variable lain di axios jangan lupa await
+        method GET
+        url
+        data dari params
+
+        data yang dibuat tadi di reasign dengan data axios
+        kirim data ke halaman fetch dengan :name=name
+        dan diterima langsung dengan props
+        v-for jangan lupa kasih:key dan emit data untuk kirim ke data row
+        jika ada row tangkap dengan props lagi
+    }
+    AddData (POST){
+        axiosnya nggak perlu di const
+        terima params data dari emits form
+        method Post
+        url
+        data dari params
+        headers dari localstorage didapat dari access_token
+        terima data fetch
+        arahkan ke halaman fetch
+
+        data yang dibuat tadi di table form dengan method yang terima emit
+        setiap input di v-model dan form di submit jangan lupa pakai prevent jika ancor
+        kirim data ke halaman app dengan @name=name
+        dan diterima langsung di app
+    }
+    EditData (PUT){
+        dari button edit bawa id di emit ke app
+        buat variable baru singular
+        jalankan method fetchbyId jika sudah
+        method GET
+        url dan id
+        headers dari localstorage didapat dari access_token
+        variable singular tadi di reasign dengan data
+        arahkan ke form edit
+        di haalaman form terima data dari app.vue 
+
+        terima params data dan id dari emits form
+        method put
+        url dan id
+        data dari params
+        headers dari localstorage didapat dari access_token
+        terima data fetch
+        arahkan ke halaman fetch
+
+        data yang dibuat ditangklap di form edit dengan props tadi 
+        jika form cuman 1 di created buat kondisi page aja
+        buat method update dengan emits data hasil update ke app.vue
+        jalankan fungsi update
+        di table form dengan method yang terima emit
+        setiap input di v-model dan form di submit jangan lupa pakai prevent jika ancor
+        kirim data ke halaman app dengan @name=name
+        dan diterima langsung di app
+    }
+    modify (PATCH){
+        axiosnya nggak perlu di const
+        dari  button yang mau dimodif bawa id di emit ke app
+        terima params data dan id dari emits form
+        method patch
+        url dan id
+        data di object
+        headers dari localstorage didapat dari access_token
+        terima data fetch
+        arahkan ke halaman fetch
+
+    }
+    DeleteItem{
+        axiosnya nggak perlu di const
+        buat method delete dengan params id menerima emit dan id lalu dengan click jalankan method deleted(idnya)
+        jika tadi di row tampung dulu table utama buat method tampung emit lagi dengan params id
+        dari tables utama di bawa ke app id untuk jalankan function delete ke app.vue 
+        terima params id dari emits form
+        method delete
+        url dan id
+        headers dari localstorage didapat dari access_token
+        terima data fetch
+        arahkan ke halaman fetch
+    }
+}
+
+
+
+
+ 
