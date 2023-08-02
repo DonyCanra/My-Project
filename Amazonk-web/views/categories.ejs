@@ -1,0 +1,83 @@
+
+  <body>
+    <%- include('_navbar') %>
+    <!-- categories section start-->
+
+    <style>
+      .layout img {
+        width: 100%;
+        padding-bottom: 2rem;
+      }
+
+      .heading {
+        text-align: center;
+        color: black;
+        padding-bottom: 0.5rem;
+        font-size: rem;
+        text-align: center;
+      }
+
+      .categories .box-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(1rem, 1fr));
+        gap: 1rem;
+      }
+
+      .categories .box-container .box {
+        text-align: center;
+      }
+
+      .categories .box-container .box .image img {
+        height: 20rem;
+        width: 100%;
+      }
+
+      .categories .box-container .box .content h6 {
+        color: black;
+        font-size: 1.5rem;
+        margin-top: 5px;
+      }
+
+      .categories .box-container .box .content .status {
+        color: #6f6f6f;
+        font-weight: bold;
+      }
+
+      .categories .box-container .box .content .contacts {
+        padding: 0.5rem;
+        color: var(--black);
+        text-align: left;
+        margin-left: 15px;
+        text-transform: none;
+      }
+
+      .categories .box-container .box .button {
+        padding: 1rem;
+      }
+    </style>
+    <section class="categories" id="categories">
+      <div class="layout">
+        <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_LPHeader_Gamers_en_US.png" alt="" />
+      </div>
+
+      <div class="heading">
+        <h1 class="heading">Featured Categories</h1>
+      </div>
+
+      <div class="box-container">
+        <% categories.forEach(el => { %>
+        <div class="box">
+          <div class="image">
+            <a href="/customers/<%= el.id %>"><img src="<%= el.imageUrl %>"></a>
+          </div>
+          <div class="content">
+            <div>
+              <h6> <%= el.category %></h6>
+            </div>
+          </div>
+        </div>
+        <% }) %>
+      </div>
+    </section>
+    <!-- categories section end -->
+  </body>

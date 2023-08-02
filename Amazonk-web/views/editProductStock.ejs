@@ -1,0 +1,25 @@
+<body>
+    <%- include('_navbar') %>
+  
+    <div class="container mt-5">
+      <div class="text-center">
+        <h1 class="display-5 mb-5" style="margin-top: 80px;"><strong>Form Add Product</strong></h1>
+      </div>
+  
+      <div class="main row justify-content-center">
+        <form action="/admins/<%= admin.id %>/restock" method="post" class="row justify-content-center mb-4">
+
+          <div class="col-10 col-md-8 mb-3">
+            <label>Stock</label>
+            <input class="form-control" type="number" name="stock" value="<%= admin.stock %>"/>
+          </div>
+  
+          <div class="col-10 col-md-8">
+            <button class="btn btn-dark" type="submit">Restock</button>
+            <a href="/admins" class="btn btn-outline-dark">Cancel</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+  

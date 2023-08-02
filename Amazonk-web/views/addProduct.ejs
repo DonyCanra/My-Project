@@ -1,0 +1,52 @@
+<body>
+  <%- include('_navbar') %>
+
+  <div class="container mt-5">
+    <div class="text-center">
+      <h1 class="display-5 mb-5" style="margin-top: 80px;"><strong>Form Add Product</strong></h1>
+    </div>
+
+    <div class="main row justify-content-center">
+      <form action="/admins/add" method="post" class="row justify-content-center mb-4">
+        <% if(errors){ %> 
+          <% errors.split(',').forEach(er => { %>
+            <p style="color: red; text-align: center;"><%= er %></p>
+          <% }) %> 
+        <% } %>
+        
+        <div class="col-10 col-md-8 mb-3">
+          <label>Name</label>
+          <input class="form-control" type="text" name="name"/>
+        </div>
+        <div class="col-10 col-md-8 mb-3">
+          <label>Price</label>
+          <input class="form-control" type="text" name="price"/>
+        </div>
+        <div class="col-10 col-md-8 mb-3">
+          <label>ImageUrl</label>
+          <input class="form-control" type="text" name="imgUrl"/>
+        </div>
+
+        <div class="col-10 col-md-8 mb-3">
+          <label>Category</label>
+          <select class="form-control" name="CategoryId">
+            <option disabled selected>---SELECT ONE---</option>
+            <% categories.forEach(el => { %>
+            <option value="<%= el.id %>"><%= el.category %></option>
+            <% }) %>
+          </select>
+        </div>
+
+        <div class="col-10 col-md-8 mb-3">
+          <label>Stock</label>
+          <input class="form-control" type="number" name="stock"/>
+        </div>
+
+        <div class="col-10 col-md-8">
+          <button class="btn btn-dark" type="submit">Save</button>
+          <a href="/admins" class="btn btn-outline-dark">Cancel</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>

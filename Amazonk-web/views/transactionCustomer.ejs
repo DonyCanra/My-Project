@@ -1,0 +1,45 @@
+<body>
+    <%- include('_navbar') %>
+      <style>
+        p span {
+          font-weight: bolder;
+        }
+      </style>
+  
+      <div class="container mt-5">
+        <div class="text-center">
+          <h1 class="display-5 mb-5" style="margin-top: 90px;"><strong>List Transaction</strong></h1>
+        </div>
+  
+        <div class="col-10 col-md-12 mt-5">
+          <table class="table table-striped table-light border border-dark-subtle"">
+            <thead class=" table-light">
+            <th>Name</th>
+            <th>Email</th>
+            <th>Transaction Date</th>
+            <th>Action</th>
+            </thead>
+  
+            <tbody>
+              <% transaction.forEach(el => { %>
+              <tr>
+                  <td>
+                    <%= el.User.name %>
+                  </td>
+                  <td>
+                    <%= el.User.email %>
+                  </td>
+                  <td>
+                    <%= el.formatDate() %>
+                  </td>
+                  <td>
+                    <a class="btn btn-danger btn-sm"
+                      href="/customers/transaction/<%= el.id %>/detail">Convert PDF</a>
+                  </td>
+                </tr>
+                <% }) %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+  </body>

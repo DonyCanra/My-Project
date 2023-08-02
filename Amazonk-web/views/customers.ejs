@@ -1,0 +1,88 @@
+
+  <body>
+    <%- include('_navbar') %>
+    <style>
+
+      .heading {
+        text-align: center;
+        color: var(--black);
+        padding-bottom: 0.5rem;
+        font-size: rem;
+        text-align: left;
+        margin-top: 5rem;
+      }
+      .heading span {
+        color: var(--main-color);
+      }
+
+      .item .box-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        gap: 1rem;
+      }
+
+      .item .box-container .box {
+        text-align: center;
+        border: var(--bg);
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+      }
+
+      .item .box-container .box .image img {
+        height: 20rem;
+        width: 100%;
+      }
+
+      .item .box-container .box .content h6 {
+        color: black;
+        font-size: 1.5rem;
+        margin-top: 5px;
+      }
+
+      .item .box-container .box .content .status {
+        color: black;
+        font-weight: bold;
+      }
+
+      .item .box-container .box .content .contacts {
+        padding: 0.5rem;
+        color: var(--black);
+        text-align: left;
+        margin-left: 15px;
+        text-transform: none;
+      }
+
+      .item .box-container .box .button {
+        padding: 1rem;
+      }
+    </style>
+    <!-- item section start-->
+    <section class="item" id="item">
+      <div class="heading">
+        <h1 class="heading"><span></span>Market Place</h1>
+      </div>
+      <div>
+        <a style="margin-bottom: 5px;" href="/customers/transaction" class="btn btn-warning">Transaction</a>
+      </div>
+
+        <div class="box-container">
+          <% customers.Products.forEach(el => { %>
+          <div class="box">
+            <div class="image">
+              <img src="<%= el.imgUrl  %>" alt="" />
+            </div>
+            <div class="content">
+              <h6><%= el.name %></h6>
+              <div class="status">
+                <p class="position"><%= convertToRupiah(el.price) %></p>
+                <p class="education">(<%= el.stock %>)</p>
+              </div>
+              <div class="button">
+                <a href="/customers/<%= customers.id %>/checkout/<%= el.id %>" class="btn">Buy</a>
+              </div>
+            </div>
+          </div>
+          <% }); %>
+      </div>
+    </section>
+    <!-- item section end -->
+  </body>

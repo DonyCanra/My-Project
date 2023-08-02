@@ -1,0 +1,36 @@
+<body>
+  <% include('_navbar') %>
+  <style>
+    p span {
+      font-weight: bolder;
+    }
+  </style>
+
+  <div class="container mt-5">
+    <div class="text-center">
+      <h1 class="display-5 mb-5"><strong>Transaction Detail</strong></h1>
+    </div>
+
+    <div class="main row justify-content-center mt-4" style="border: 1px solid black;">
+      <img style="height: 20%; width: 20%;" src="<%= transactions.Product.imgUrl %>" alt="">
+      <p style="margin-top: 50px;"><span>Name Product :</span>
+        <%= transactions.Product.name %>
+      </p>
+      <p><span>Price :</span>
+        <%= convertToRupiah(transactions.Product.price) %>
+      </p>
+      <p><span>Date :</span>
+        <%= transactions.Transaction.formatDate() %>
+      </p>
+      <p><span>Status :</span>
+        <%= transactions.Transaction.status %>
+      </p>
+    </div>
+
+    <% if (invoiceData && base64String) { %>
+      <div class="text-center mt-5">
+        <a href="data:application/pdf;base64,<%= base64String %>" download="invoice.pdf" class="btn btn-primary">Download PDF</a>
+      </div>
+    <% } %>
+  </div>
+</body>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Amazon_icon.svg/2500px-Amazon_icon.svg.png">
+  <title>Amazonk</title>
+
+  <!-- Font awesome cdn link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+
+  <!-- Custom css file link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root{
+  --main-color: #feb600;
+  --black: rgb(255, 254, 254);
+  --bg: white;
+  --border: .1rem solid #fd9a05;
+}
+
+*{
+  font-family: 'Roboto', sans-serif;
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  outline: none; border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: .2s linear; 
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+  width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+  background: var(--main-color);
+  border-radius: 5rem;
+}
+
+body{
+  background: var(--bg);
+}
+
+section{
+  padding: 2rem 7%;
+}
+
+
+.btn{
+  display: inline-block;
+  padding: .9rem 3rem;
+  font-size: 9px;
+  color: whitesmoke;
+  background: var(--main-color);
+  cursor: pointer;
+}
+
+.btn:hover{
+  background: aliceblue;
+  border-color: var(--main-color);
+
+}
+
+.header{
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 7%;
+  border-bottom: var(--border);
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+}
+
+.header .logo{
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+.header .logo img {
+  display: flex;
+  height: 2%;
+  width: 7%;
+}
+
+.header .logo span{
+  color: var(--main-color);
+}
+
+.header .navbar a{
+  margin: 0 1rem;
+  font-size: 1.6rem;
+  color: black;
+  text-decoration: none;
+  position: relative;
+}
+
+.header .navbar a:hover{
+  color: var(--black);
+  border-bottom: .1rem solid var(--border);
+  padding-bottom: .5rem;
+  color:white;
+}
+
+.header .icons div{
+  color: var(--border);
+  cursor: pointer;
+  font-size: 2.5rem;
+  margin-left: 2rem;
+}
+
+.header .icons div:hover{
+  color: var(--main-color);
+}
+
+#menu-btn{
+  display: none;
+}
+
+.header .search-form{
+  position: absolute;
+  top: 115%; right: 7%;
+  background: var(--black);
+  width: 50rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  transform: scaleY(0);
+  transform-origin: top;
+}
+
+.header .search-form.active{
+  transform: scaleY(1);
+}
+
+.header .search-form input{
+  height: 100%;
+  width: 100%;
+  font-size: 1.6rem;
+  color: white;
+  padding: 1rem;
+  text-transform: none;
+
+}
+
+.header .search-form label{
+  cursor: pointer;
+  font-size: 2.2rem;
+  margin-right: 1.5rem;
+  color: var(--black);
+}
+
+.header .search-form label:hover{
+  color: var(--main-color);
+}
+
+.header .cart-items-container{
+  position: absolute;
+  top: 100%; right: -100%;
+  height: calc(100vh - 9.5rem);
+  width: 35rem;
+  background: whitesmoke;
+  padding: 0 1.5rem;
+}
+
+.header .cart-items-container.active{
+  right: 0;
+}
+
+.header .cart-items-container .cart-item{
+  position: relative;
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.header .cart-items-container .cart-item .fa-time{
+  position: absolute;
+  top: 1rem; right: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--black);
+}
+
+.header .cart-items-container .cart-item .fa-times:hover{
+  color: var(--main-color);
+}
+
+.header .cart-items-container .cart-item img{
+  height: 10rem;
+  width: 10rem;
+  border-radius: 60%;
+  object-fit: cover;
+
+}
+
+.header .cart-items-container .cart-item .content h3 p a{
+  font-size: 2rem;
+  color: blue;
+  padding-bottom: .5rem;
+  margin-top: 50rem;
+}
+
+.header .cart-items-container .cart-item .content .price{
+  font-size: 1.5rem;
+  color:var(--black);
+}
+
+.header .cart-items-container .btn{
+  width: 100%;
+  text-align: center;
+}
+
+  </style>
+</head>
+
+<body>
+<!-- Header section start-->
+<header class="header">
+  <a href="/admins" class="logo">
+    AMA<span>ZONK</span>
+  </a>
+  
+  
+  <div class="icons">
+    <div class="fas fa-search" id="search-btn"></div>
+    <div class="fas fa-user" id="cart-btn"></div>
+    <div class="fas fa-bars" id="menu-btn"></div>
+  </div>
+
+  <div class="search-form">
+    <input type="text" placeholder="search" />
+    <label class="fas fa-search"></label>
+  </div>
+
+  <div class="cart-items-container">
+    <div class="cart-item">
+      <span class="fas fa-time"></span><img src="https://media.kompas.tv/library/image/content_article/article_img/20220621055901.jpg" alt="" />
+      <div class="content">
+        <h3>Username</h3>
+        <p>Saldo : Rp 10.000.000</p>
+      </div>
+    </div>
+    <a href="/login" class="btn">Logout</a>
+  </div>
+</header>
+<!-- Header section end-->
+
+<script>
+  // Toogle class active
+let navbar = document.querySelector(".navbar");
+// ketika menu di klik
+document.querySelector("#menu-btn").onclick = () => {
+  navbar.classList.toggle("active");
+  searchForm.classList.remove("active");
+  cartItem.classList.remove("active");
+}
+
+let searchForm = document.querySelector(".search-form");
+// ketika menu di klik
+document.querySelector("#search-btn").onclick = () => {
+  searchForm.classList.toggle("active");
+  navbar.classList.remove("active");
+  cartItem.classList.remove("active");
+}
+
+let cartItem = document.querySelector(".cart-items-container");
+// ketika menu di klik
+document.querySelector("#cart-btn").onclick = () => {
+  cartItem.classList.toggle("active");
+  navbar.classList.remove("active");
+  searchForm.classList.remove("active");
+}
+
+window.onscroll = () =>{
+  navbar.classList.remove("active");
+  searchForm.classList.remove("active");
+  cartItem.classList.remove("active");
+}
+</script>
+</body>
+
+</html>

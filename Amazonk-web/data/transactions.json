@@ -1,0 +1,17 @@
+[
+  {
+    "UserId": 2,
+    "TransactionDate": "2023-01-01",
+    "status": "succcess"
+  },
+  {
+    "UserId": 2,
+    "TransactionDate": "2023-01-02",
+    "status": "succcess"
+  },
+  {
+    "UserId": 3,
+    "TransactionDate": "2023-01-03",
+    "status": "success"
+  }
+]

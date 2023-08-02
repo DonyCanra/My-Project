@@ -1,0 +1,113 @@
+[
+  {
+    "name": "ASUS X15-Plus",
+    "price": 9000000,
+    "imgUrl": "https://m.media-amazon.com/imgs/I/61TwhPQE7OL._AC_SX679_.jpg",
+    "stock": 10,
+    "CategoryId": 1
+  },
+
+  {
+    "name": "HP 222A0UT#ABA",
+    "price": 11300000,
+    "imgUrl": "https://m.media-amazon.com/images/I/41oZZcY0C1L._AC_.jpg",
+    "stock": 10,
+    "CategoryId": 1
+  },
+
+  {
+    "name": "ACER AN515-57-79TD",
+    "price": 12000000,
+    "imgUrl": "https://m.media-amazon.com/images/I/81lDOtJRTkL._AC_SX679_.jpg",
+    "stock": 10,
+    "CategoryId": 1
+  },
+
+  {
+    "name": "Lenovo 5 pro",
+    "price": 12000000,
+    "imgUrl": "https://m.media-amazon.com/images/I/61TjVU2HtZL._AC_SX679_.jpg",
+    "stock": 10,
+    "CategoryId": 1
+  },
+  {
+    "name": "ASUS-ROG Strix-G15",
+    "price": 20000000,
+    "imgUrl": "https://m.media-amazon.com/images/I/71pWcOnLL+L._AC_SX679_.jpg",
+    "stock": 10,
+    "CategoryId": 1
+  },
+  {
+    "name": "NUBWO U3-Headset",
+    "price": 150000,
+    "imgUrl": "https://m.media-amazon.com/images/I/61eCTlAIOML._AC_SX679_.jpg",
+    "stock": 10,
+    "CategoryId": 2
+  },
+
+  {
+    "name": "BENGOO G9000",
+    "price": 290000,
+    "imgUrl": "https://m.media-amazon.com/images/I/61CGHv6kmWL._AC_SX679_.jpg",
+    "stock": 10,
+    "CategoryId": 2
+  },
+
+  {
+    "name": "Logitech-G 981-001105",
+    "price": 570000,
+    "imgUrl": "https://m.media-amazon.com/images/I/71mm1J9608L._AC_SX679_.jpg",
+    "stock": 10,
+    "CategoryId": 2
+  },
+
+  {
+    "name": "GAMEPOWER Raijin",
+    "price": 450000,
+    "imgUrl": "https://m.media-amazon.com/images/I/41J9BGs7gGL._AC_SX679_.jpg",
+    "stock": 10,
+    "CategoryId": 2
+  },
+  {
+    "name": "HyperX Cloud ll",
+    "price": 300000,
+    "imgUrl": "https://m.media-amazon.com/images/I/71MJ3OaVqBL._AC_SX679_.jpg",
+    "stock": 10,
+    "CategoryId": 2
+  },
+  {
+    "name": "Neon Genesis Evangelion",
+    "price": 440000,
+    "imgUrl": "https://m.media-amazon.com/images/I/81mkt66kyEL._AC_SX679_.jpg",
+    "stock": 10,
+    "CategoryId": 3
+  },
+  {
+    "name": "MAFEX No.185 SPIDER-MAN Spider-Man",
+    "price": 360000,
+    "imgUrl": "https://m.media-amazon.com/images/I/619g5sAXjuL._AC_SX679_.jpg",
+    "stock": 10,
+    "CategoryId": 3
+  },
+  {
+    "name": "Square Enix Final Fantasy VII Remake",
+    "price": 650000,
+    "imgUrl": "https://m.media-amazon.com/images/I/61ui7Fe-XFL._AC_SX679_.jpg",
+    "stock": 10,
+    "CategoryId": 3
+  },
+  {
+    "name": "Good Smile Ghost of Tsushima: Jin Sakai Figma",
+    "price": 350000,
+    "imgUrl": "https://m.media-amazon.com/images/I/71-kEWAySQS._AC_SY879_.jpg",
+    "stock": 10,
+    "CategoryId": 3
+  },
+  {
+    "name": "Sen-ti-nel - Marvel - Iron Man, Sentinel Fighting Armor",
+    "price": 170000,
+    "imgUrl": "https://m.media-amazon.com/images/I/615XxfXENDL._AC_SX679_.jpg",
+    "stock": 10,
+    "CategoryId": 3
+  }
+]
