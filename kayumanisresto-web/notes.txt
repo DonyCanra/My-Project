@@ -1,0 +1,25 @@
+npm init -y
+npm i pg express cors sequelize jsonwebtoken dotenv bcryptjs && npm i -D sequelize-cli
+mkdir middlewares controllers routes helpers
+
+npx sequelize init
+npx sequelize db:create
+npx sequelize model:create --name User --attributes username:string,email:string,password:string,role:string,photoUser:string,address:string
+npx sequelize model:create --name Category --attributes imageUrl:string,name:string
+npx sequelize model:create --name Item --attributes name:string,description:text,price:integer,imgUrl:string,status:string,UserId:string,CategoryId:integer
+npx sequelize model:create --name Ingredient --attributes ItemId:integer,name:string
+
+npx sequelize db:migrate
+
+
+requirement challenge 1 {
+tinggal{
+    deploy
+}
+}
+
+kitRaXFT2oLf1E9E
+export DATABASE_URL=postgresql://postgres:kitRaXFT2oLf1E9E@db.rthzplaszbmzbzivvgxk.supabase.co:5432/postgres
+
+postgresql://postgres:kitRaXFT2oLf1E9E@db.rthzplaszbmzbzivvgxk.supabase.co:5432/postgres
+
