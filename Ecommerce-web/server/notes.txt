@@ -1,0 +1,36 @@
+npm init -y
+npm i pg express sequelize && npm i -D sequelize-cli
+npm i jsonwebtoken bcryptjs
+npm install dotenv --save
+npm install google-auth-library --save
+
+npx sequelize init
+npx sequelize db:create
+
+npx sequelize model:create --name User --attributes username:string,email:string,password:string,role:string,phoneNumber:string,address:string
+npx sequelize model:create --name Category --attributes name:string
+npx sequelize model:create --name Product --attributes name:string,description:string,price:integer,stock:integer,imgUrl:string,CategoryId:integer,AuthorId:integer
+npx sequelize model:create --name History --attributes title:string,description:text,updatedBy:date
+npx sequelize model:create --name Customer --attributes email:string,password:string,role:string
+npx sequelize model:create --name Transaction --attributes CustomerId:integer,ProductId:integer
+
+npx sequelize db:migrate
+
+Branded things (Contoh: Zara, H&M, Uniqlo, IKEA)
+a. Product (entitas utama)
+    name:string,description:string,price:integer,stock:integer,imgUrl:string,CategoryId:integer,AuthorId:integer
+b. CategoryId
+    name:string
+
+export DATABASE_URL=postgresql://postgres:OCYdv8zR84d9Laun@db.ikdogqkckgzagzirucyr.supabase.co:5432/postgres
+
+ssh -i "challenge-part-one-private-key.pem" ubuntu@ec2-3-0-184-1.ap-southeast-1.compute.amazonaws.com
+
+token classic : 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
+token classic : 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
+
+OCYdv8zR84d9Laun
+
+postgresql://postgres:OCYdv8zR84d9Laun@db.wgnqydybvkxdduxmwcnb.supabase.co:5432/postgres
+postgresql://postgres:OCYdv8zR84d9Laun@db.ikdogqkckgzagzirucyr.supabase.co:5432/postgres
+

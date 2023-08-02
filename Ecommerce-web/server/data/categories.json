@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Laptops",
+    "imgUrl": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Karu/2021/June/Karu_LP_Laptop.png"
+  },
+  {
+    "name": "Headsets",
+    "imgUrl": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Karu/2021/June/Karu_Quad_Headset.jpg"
+  },
+  {
+    "name": "Keyboards",
+    "imgUrl": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Karu/2021/June/Karu_Quad_Keyboard.jpg"
+  },
+  {
+    "name": "Gaming Mice",
+    "imgUrl": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Karu/2021/June/Karu_Quad_Mouse.jpg"
+  },
+  {
+    "name": "Action figure",
+    "imgUrl": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Karu/2021/June/Karu_Quad_Figure.jpg"
+  },
+  {
+    "name": "Video Games",
+    "imgUrl": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Karu/2021/June/Karu_LP_Game.png"
+  }
+]

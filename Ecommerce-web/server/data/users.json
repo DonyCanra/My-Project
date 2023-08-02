@@ -1,0 +1,29 @@
+[
+    {
+      "username": "Megachan",
+      "email": "megachan@gmail.com",
+      "password": "megawati",
+      "role": "admin",
+      "phoneNumber": "082224034729",
+      "imgUrl": "https://i.redd.it/6zqeg913tg551.jpg",
+      "address": "Jakarta"
+    },
+    {
+      "username": "Soehardgame",
+      "email": "puanmutzz@gmail.com",
+      "password": "megawati",
+      "role": "staff",
+      "phoneNumber": "082224034729",
+      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO_M1E4MkW8BWsGRK9d2TtWEf80XQ7DcQGCQ&usqp=CAU",
+      "address": "Jakarta"
+    },
+    {
+      "username": "Joko Widodoooo",
+      "email": "jokowidodo@gmail.com",
+      "password": "jokowi",
+      "role": "staff",
+      "phoneNumber": "082224034729",
+      "imgUrl": "https://assets.ayobandung.com/crop/0x0:0x0/750x500/webp/photo/2023/04/30/Screenshot_20230430_213144_Instagram-2194441172.jpg",
+      "address": "Solo"
+    }
+  ]

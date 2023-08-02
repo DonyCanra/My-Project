@@ -1,0 +1,225 @@
+[
+  {
+    "name": "MSI Stealth 15M 15.6 FHD 144Hz Ultra Thin and Light Gaming Laptop",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius deserunt sit enim earum odit, magnam rem molestiae ipsam dolores neque error! Expedita eligendi asperiores, laborum tempora recusandae nemo possimus ad! Nihil distinctio, eum sit impedit illum repellendus nam? Doloremque omnis ipsam beatae ullam a eius provident explicabo ex, commodi ad.",
+    "price": 9000000,
+    "stock": 10,
+    "imgUrl": "https://m.media-amazon.com/images/I/51UQajnLVUL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
+    "status": "Active",
+    "categoryId": 1,
+    "authorId": 1
+  },
+
+  {
+    "name": "HP 222A0UT#ABA",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius deserunt sit enim earum odit, magnam rem molestiae ipsam dolores neque error! Expedita eligendi asperiores, laborum tempora recusandae nemo possimus ad! Nihil distinctio, eum sit impedit illum repellendus nam? Doloremque omnis ipsam beatae ullam a eius provident explicabo ex, commodi ad.",
+    "price": 11300000,
+    "stock": 10,
+    "imgUrl": "https://m.media-amazon.com/images/I/41oZZcY0C1L._AC_.jpg",
+    "status": "Active",
+    "categoryId": 1,
+    "authorId": 1
+  },
+
+  {
+    "name": "ACER AN515-57-79TD",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius deserunt sit enim earum odit, magnam rem molestiae ipsam dolores neque error! Expedita eligendi asperiores, laborum tempora recusandae nemo possimus ad! Nihil distinctio, eum sit impedit illum repellendus nam? Doloremque omnis ipsam beatae ullam a eius provident explicabo ex, commodi ad.",
+    "price": 12000000,
+    "stock": 10,
+    "imgUrl": "https://m.media-amazon.com/images/I/81lDOtJRTkL._AC_SX679_.jpg",
+    "status": "Active",
+    "categoryId": 1,
+    "authorId": 1
+  },
+
+  {
+    "name": "Lenovo 5 pro",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius deserunt sit enim earum odit, magnam rem molestiae ipsam dolores neque error! Expedita eligendi asperiores, laborum tempora recusandae nemo possimus ad! Nihil distinctio, eum sit impedit illum repellendus nam? Doloremque omnis ipsam beatae ullam a eius provident explicabo ex, commodi ad.",
+    "price": 12000000,
+    "stock": 10,
+    "imgUrl": "https://m.media-amazon.com/images/I/61TjVU2HtZL._AC_SX679_.jpg",
+    "status": "Active",
+    "categoryId": 1,
+    "authorId": 1
+  },
+  {
+    "name": "ASUS-ROG Strix-G15",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius deserunt sit enim earum odit, magnam rem molestiae ipsam dolores neque error! Expedita eligendi asperiores, laborum tempora recusandae nemo possimus ad! Nihil distinctio, eum sit impedit illum repellendus nam? Doloremque omnis ipsam beatae ullam a eius provident explicabo ex, commodi ad.",
+    "price": 20000000,
+    "stock": 10,
+    "imgUrl": "https://m.media-amazon.com/images/I/71pWcOnLL+L._AC_SX679_.jpg",
+    "status": "Active",
+    "categoryId": 1,
+    "authorId": 1
+  },
+  {
+    "name": "BENGOO G9000",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius deserunt sit enim earum odit, magnam rem molestiae ipsam dolores neque error! Expedita eligendi asperiores, laborum tempora recusandae nemo possimus ad! Nihil distinctio, eum sit impedit illum repellendus nam? Doloremque omnis ipsam beatae ullam a eius provident explicabo ex, commodi ad.",
+    "price": 2000000,
+    "stock": 10,
+    "imgUrl": "https://m.media-amazon.com/images/I/61CGHv6kmWL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
+    "status": "Active",
+    "categoryId": 2,
+    "authorId": 2
+  },
+  {
+    "name": "NUBWO G06",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius deserunt sit enim earum odit, magnam rem molestiae ipsam dolores neque error! Expedita eligendi asperiores, laborum tempora recusandae nemo possimus ad! Nihil distinctio, eum sit impedit illum repellendus nam? Doloremque omnis ipsam beatae ullam a eius provident explicabo ex, commodi ad.",
+    "price": 2000000,
+    "stock": 10,
+    "imgUrl": "https://m.media-amazon.com/images/I/61qIbyY0NPL._AC_SX679_.jpg",
+    "status": "Active",
+    "categoryId": 2,
+    "authorId": 2
+  },
+  {
+    "name": "Ozeino Gaming",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius deserunt sit enim earum odit, magnam rem molestiae ipsam dolores neque error! Expedita eligendi asperiores, laborum tempora recusandae nemo possimus ad! Nihil distinctio, eum sit impedit illum repellendus nam? Doloremque omnis ipsam beatae ullam a eius provident explicabo ex, commodi ad.",
+    "price": 1100000,
+    "stock": 10,
+    "imgUrl": "https://m.media-amazon.com/images/I/712OyBPPL0L._AC_SX679_.jpg",
+    "status": "Active",
+    "categoryId": 2,
+    "authorId": 2
+  },
+  {
+    "name": "SteelSeries Arctis Nova 7",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius deserunt sit enim earum odit, magnam rem molestiae ipsam dolores neque error! Expedita eligendi asperiores, laborum tempora recusandae nemo possimus ad! Nihil distinctio, eum sit impedit illum repellendus nam? Doloremque omnis ipsam beatae ullam a eius provident explicabo ex, commodi ad.",
+    "price": 2300000,
+    "stock": 10,
+    "imgUrl": "https://m.media-amazon.com/images/I/91tof1NCzxL._AC_SX679_.jpg",
+    "status": "Active",
+    "categoryId": 2,
+    "authorId": 2
+  },
+  {
+    "name": "RK ROYAL KLUDGE M75 Mechanical",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius deserunt sit enim earum odit, magnam rem molestiae ipsam dolores neque error! Expedita eligendi asperiores, laborum tempora recusandae nemo possimus ad! Nihil distinctio, eum sit impedit illum repellendus nam? Doloremque omnis ipsam beatae ullam a eius provident explicabo ex, commodi ad.",
+    "price": 2700000,
+    "stock": 10,
+    "imgUrl": "https://m.media-amazon.com/images/I/61f2zxfQGUL._AC_SX679_.jpg",
+    "status": "Active",
+    "categoryId": 3,
+    "authorId": 3
+  },
+  {
+    "name": "Snpurdiri 60% Wired Gaming",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius deserunt sit enim earum odit, magnam rem molestiae ipsam dolores neque error! Expedita eligendi asperiores, laborum tempora recusandae nemo possimus ad! Nihil distinctio, eum sit impedit illum repellendus nam? Doloremque omnis ipsam beatae ullam a eius provident explicabo ex, commodi ad.",
+    "price": 2100000,
+    "stock": 10,
+    "imgUrl": "https://m.media-amazon.com/images/I/61UGJ7z-sUL._AC_SX679_.jpg",
+    "status": "Active",
+    "categoryId": 3,
+    "authorId": 3
+  },
+  {
+    "name": "Womier 60% Percent Keyboard",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius deserunt sit enim earum odit, magnam rem molestiae ipsam dolores neque error! Expedita eligendi asperiores, laborum tempora recusandae nemo possimus ad! Nihil distinctio, eum sit impedit illum repellendus nam? Doloremque omnis ipsam beatae ullam a eius provident explicabo ex, commodi ad.",
+    "price": 2000000,
+    "stock": 10,
+    "imgUrl": "https://m.media-amazon.com/images/I/71PB7gOSePL._AC_SX679_.jpg",
+    "status": "Active",
+    "categoryId": 3,
+    "authorId": 3
+  },
+  {
+    "name": "SteelSeries Aerox 5",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius deserunt sit enim earum odit, magnam rem molestiae ipsam dolores neque error! Expedita eligendi asperiores, laborum tempora recusandae nemo possimus ad! Nihil distinctio, eum sit impedit illum repellendus nam? Doloremque omnis ipsam beatae ullam a eius provident explicabo ex, commodi ad.",
+    "price": 1000000,
+    "stock": 10,
+    "imgUrl": "https://m.media-amazon.com/images/I/71JdNxzT+CL._AC_SX679_.jpg",
+    "status": "Active",
+    "categoryId": 4,
+    "authorId": 1
+  },
+  {
+    "name": "RisoPhy Wireless Gaming",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius deserunt sit enim earum odit, magnam rem molestiae ipsam dolores neque error! Expedita eligendi asperiores, laborum tempora recusandae nemo possimus ad! Nihil distinctio, eum sit impedit illum repellendus nam? Doloremque omnis ipsam beatae ullam a eius provident explicabo ex, commodi ad.",
+    "price": 3000000,
+    "stock": 10,
+    "imgUrl": "https://m.media-amazon.com/images/I/61qN9d08hgL._AC_SX679_.jpg",
+    "status": "Active",
+    "categoryId": 4,
+    "authorId": 1
+  },
+  {
+    "name": "AJ52 Watcher RGB Gaming Mouse,",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius deserunt sit enim earum odit, magnam rem molestiae ipsam dolores neque error! Expedita eligendi asperiores, laborum tempora recusandae nemo possimus ad! Nihil distinctio, eum sit impedit illum repellendus nam? Doloremque omnis ipsam beatae ullam a eius provident explicabo ex, commodi ad.",
+    "price": 2900000,
+    "stock": 10,
+    "imgUrl": "https://m.media-amazon.com/images/I/51WaY1BLs8L._AC_SX679_.jpg",
+    "status": "Active",
+    "categoryId": 4,
+    "authorId": 1
+  },
+  {
+    "name": "BENGOO Gaming Mouse Wired",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius deserunt sit enim earum odit, magnam rem molestiae ipsam dolores neque error! Expedita eligendi asperiores, laborum tempora recusandae nemo possimus ad! Nihil distinctio, eum sit impedit illum repellendus nam? Doloremque omnis ipsam beatae ullam a eius provident explicabo ex, commodi ad.",
+    "price": 3400000,
+    "stock": 10,
+    "imgUrl": "https://m.media-amazon.com/images/I/61lCLrCtuhL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
+    "status": "Active",
+    "categoryId": 4,
+    "authorId": 1
+  },
+  {
+    "name": "JSVDE Anime Figure",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius deserunt sit enim earum odit, magnam rem molestiae ipsam dolores neque error! Expedita eligendi asperiores, laborum tempora recusandae nemo possimus ad! Nihil distinctio, eum sit impedit illum repellendus nam? Doloremque omnis ipsam beatae ullam a eius provident explicabo ex, commodi ad.",
+    "price": 1100000,
+    "stock": 10,
+    "imgUrl": "https://m.media-amazon.com/images/I/51It9KQ4CEL._AC_SX679_.jpg",
+    "status": "Active",
+    "categoryId": 5,
+    "authorId": 1
+  },
+  {
+    "name": "Batman The Batman",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius deserunt sit enim earum odit, magnam rem molestiae ipsam dolores neque error! Expedita eligendi asperiores, laborum tempora recusandae nemo possimus ad! Nihil distinctio, eum sit impedit illum repellendus nam? Doloremque omnis ipsam beatae ullam a eius provident explicabo ex, commodi ad.",
+    "price": 900000,
+    "stock": 10,
+    "imgUrl": "https://m.media-amazon.com/images/I/718Td6MrRTL._AC_SY879_.jpg",
+    "status": "Active",
+    "categoryId": 5,
+    "authorId": 1
+  },
+  {
+    "name": "Armor Deadpool Action Figure",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius deserunt sit enim earum odit, magnam rem molestiae ipsam dolores neque error! Expedita eligendi asperiores, laborum tempora recusandae nemo possimus ad! Nihil distinctio, eum sit impedit illum repellendus nam? Doloremque omnis ipsam beatae ullam a eius provident explicabo ex, commodi ad.",
+    "price": 5000000,
+    "stock": 10,
+    "imgUrl": "https://m.media-amazon.com/images/I/61Bh90uXD9L._AC_SX679_.jpg",
+    "status": "Active",
+    "categoryId": 5,
+    "authorId": 1
+  },
+  {
+    "name": "Sonic Frontiers",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius deserunt sit enim earum odit, magnam rem molestiae ipsam dolores neque error! Expedita eligendi asperiores, laborum tempora recusandae nemo possimus ad! Nihil distinctio, eum sit impedit illum repellendus nam? Doloremque omnis ipsam beatae ullam a eius provident explicabo ex, commodi ad.",
+    "price": 1200000,
+    "stock": 10,
+    "imgUrl": "https://m.media-amazon.com/images/I/81Fq2dHXTWL._SY679_.jpg",
+    "status": "Active",
+    "categoryId": 6,
+    "authorId": 2
+  },
+  {
+    "name": "The Legend of Zelda",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius deserunt sit enim earum odit, magnam rem molestiae ipsam dolores neque error! Expedita eligendi asperiores, laborum tempora recusandae nemo possimus ad! Nihil distinctio, eum sit impedit illum repellendus nam? Doloremque omnis ipsam beatae ullam a eius provident explicabo ex, commodi ad.",
+    "price": 1100000,
+    "stock": 10,
+    "imgUrl": "https://m.media-amazon.com/images/I/51GXBV-caXL._SY430_SX215_QL70_FMwebp_.jpg",
+    "status": "Active",
+    "categoryId": 6,
+    "authorId": 2
+  },
+  {
+    "name": "Plants Vs Zombies",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius deserunt sit enim earum odit, magnam rem molestiae ipsam dolores neque error! Expedita eligendi asperiores, laborum tempora recusandae nemo possimus ad! Nihil distinctio, eum sit impedit illum repellendus nam? Doloremque omnis ipsam beatae ullam a eius provident explicabo ex, commodi ad.",
+    "price": 300000,
+    "stock": 10,
+    "imgUrl": "https://m.media-amazon.com/images/I/51kxxNWtrWL._SX300_SY300_QL70_FMwebp_.jpg",
+    "status": "Active",
+    "categoryId": 6,
+    "authorId": 3
+  }
+]
