@@ -1,0 +1,21 @@
+version: "3.6"
+
+services:
+  app-service:
+    build: ./services/app
+    ports:
+      - "4001:4001"
+    volumes:
+      - ./services/app:/usr/local/app
+  user-service:
+    build: ./services/user
+    ports:
+      - "4002:4002"
+    volumes:
+      - ./services/user:/usr/local/user
+  orchestractor:
+    build: ./orchestrator
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./orchestrator:/usr/local/orchestrator

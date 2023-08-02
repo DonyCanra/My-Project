@@ -1,0 +1,28 @@
+// react navigation
+npm install @react-navigation/native
+
+// stack
+npm install @react-navigation/native-stack
+
+npx create-expo-app my-app
+
+password mongodb: mfsPYj43v?,*eWt
+
+password database_mongodb : nx5rZ0i0tDi4LgqM
+
+uri : mongodb+srv://tsajimkhaadev:nx5rZ0i0tDi4LgqM@cluster0.ia5osz1.mongodb.net/?retryWrites=true&w=majority
+
+- microservices {
+    update data items tembahin MongodbId serta hapus asosiation
+    seeding data ulang dengan penambahan data MongodbId
+    serta perbaikan data juga
+    coba run app di post man
+}
+
+sm@Y-GgTq3*J2tf
+
+postgresql://postgres:sm@Y-GgTq3*J2tf@db.ftupgtiegwzpyymrmutt.supabase.co:5432/postgres
+
+*9%VkqhXDGGTxH5
+
+ 
